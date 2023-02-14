@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double triple</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center text-5xl my-7">Double and Triple your Number!!!</h1>
+    </header>
+
+    <main>
+        <section class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:w-3/4 mx-auto">
+                <!-- Double -->
+                <div class="bg-orange-200 p-4 rounded">
+                    <h2 class="text-3xl text-sky-500">Double your Number</h2>
+                    <input placeholder="Enter Number" class="p-2 rounded border border-pink-600 my-5 block w-2/4"
+                        type="text" name="" id="double-input-field">
+                    <button onclick="double()" class="bg-yellow-400 p-2 rounded">Double</button>
+                    <p class="mt-5">Your Double Number is: <span id="result-double" class="text-2xl font-bold text-green-500"></span></p>
+                </div>
+
+                <!-- Triple -->
+                <div class="bg-pink-200 p-4 rounded">
+                    <h2 class="text-3xl text-sky-500">Triple your Number</h2>
+                    <input placeholder="Enter Number" class="p-2 rounded border border-pink-600 my-5 block w-2/4"
+                        type="text" name="" id="triple-input-field">
+                    <button onclick="triple()" class="bg-yellow-400 p-2 rounded">Triple</button>
+                    <p class="mt-5">Your Triple Number is: <span id="result-triple" class="text-2xl font-bold text-green-500"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js file -->
+    <script src="js/utilites.js"></script>
+    <script src="js/double.js"></script>
+    <script src="js/triple.js"></script>
+</body>
+
+</html>
